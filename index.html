@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="main.css">
+<title>Title</title>
+</head>
+<body>
+
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">Press Here For Your Weather</button>
+
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+  <div class="offcanvas-header">
+    <h3 class="offcanvas-title" id="offcanvasWithBackdropLabel">Forecast</h5>
+        
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div id="weeklyforecast" class="carousel-item active">
+           <h5 style="color: white; text-align: center;">Weekly</h5>
+           <div class="row justify-content-around">
+               <div class="col col-5">
+                 <div class="day"></div>
+                <p id="wtemp">hi</p>
+                <div id="ntemp"></div>
+                <p id="whumid"></p>
+                <p id="wsunrise"></p>
+                <p id="wsunset"></p>
+               </div>
+               <div class="col col-5">
+                 <div class="day"></div>
+                <p id="wtemp">hi</p>
+                <div id="ntemp"></div>
+                <p id="whumid"></p>
+                <p id="wsunrise"></p>
+                <p id="wsunset"></p>
+               </div>
+           </div>
+           <div class="row justify-content-around">
+            <div class="col col-5">
+              <div class="day"></div>
+              <p id="wtemp">hi</p>
+              <div id="ntemp"></div>
+              <p id="whumid"></p>
+              <p id="wsunrise"></p>
+              <p id="wsunset"></p>
+            </div>
+            <div class="col col-5">
+              <div class="day"></div>
+              <p id="wtemp">hi</p>
+              <div id="ntemp"></div>
+              <p id="whumid"></p>
+              <p id="wsunrise"></p>
+              <p id="wsunset"></p>
+            </div>
+        </div>
+        <div class="row justify-content-around">
+    
+          <div class="col col-5">
+            <div class="day"></div>
+            <p id="wtemp">hi</p>
+            <div id="ntemp"></div>
+            <p id="whumid"></p>
+            <p id="wsunrise"></p>
+            <p id="wsunset"></p>
+            </div>
+            <div class="col col-5">
+              <div class="day"></div>
+              <p id="wtemp">hi</p>
+              <div id="ntemp"></div>
+              <p id="whumid"></p>
+              <p id="wsunrise"></p>
+              <p id="wsunset"></p>
+            </div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="col col-5">
+              <div class="day"></div>
+              <p id="wtemp">hi</p>
+              <div id="ntemp"></div>
+              <p id="whumid"></p>
+              <p id="wsunrise"></p>
+              <p id="wsunset"></p>
+            </div>
+
+        </div>
+
+          </div>
+          <div class="carousel-item justify-content-center">
+              <h4 style="text-align: center;" id="currenttime">12:30 <span id="am-pm">PM</span></h4>
+              <h4 style="text-align: center;" id="date"></h4>
+            <h5 style="text-align: center; color: white;">Current Weather</h5>
+            <img src="" id="currenticon"></img>
+            <h6 style="text-align: center;">Current Temperature</h6>
+            <p style="text-align: center;" id="currenttemp"></p>
+            <h6 style="text-align: center;"> Humidity</h6>
+            <p style="text-align: center;" id="currenthumidity"></p>
+            <h6 style="text-align: center;">Wind Speed</h6>
+            <p style="text-align: center;" id="wind_speed"></p>
+
+          </div>
+          <div class="carousel-item">
+            <h5 style="color: white; text-align: center;"> Sunlight </h5>
+            <div class="container">
+                <div class="row justify-content-center">
+                  <div style="margin-top: 5vh;" class="col col-9">
+                    <h4 id="date"></h4>
+                    <p style="text-align: center;">Sunrise</p>
+                    <i id="sunriseicon"></i>
+                    <p style="text-align: center;" id="sunrisetime"></p>
+                  </div>
+                </div>
+                <div class="row justify-content-center">
+                  <div style="margin-top: 25vh;" class="col col-9">
+                    <p style="text-align: center;">Sunset</p>
+                    <i id="sunseticon"></i>
+                    <p style="text-align: center;" id="sunsettime"></p>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+      </div>
+  </div>
+</div>
+
+<script src="main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
